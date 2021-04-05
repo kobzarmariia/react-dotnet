@@ -21,7 +21,7 @@ namespace API
         {
             services.AddControllers();
 
-            ApplicationServiceExtensions.AddApplicationServices(services, _configuration);
+            services.AddApplicationServices(_configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
